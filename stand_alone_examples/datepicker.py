@@ -673,7 +673,7 @@ class DatePicker(urwid.WidgetWrap):
                  return_unused_navigation_keystroke=False, year_jump_length=50, min_width_each_picker=9, width_day_picker=("weight", 1),
                  width_month_picker=("weight", 1), width_year_picker=("weight", 1), space_between=2, year_align="center", month_align="center",
                  day_align="center", top_align="center", top_covered=("▲", None, None), top_exposed=("───", None, None), bottom_align="center",
-                 bottom_covered=("▼", None, None), bottom_exposed=("───", None, None), highlight=(None, None), entry_not_focus=None):
+                 bottom_covered=("▼", None, None), bottom_exposed=("───", None, None), highlight=(None, None)):
         
         assert (type(date_range) == DatePicker.Range), TYPE_ERR_MSG.format("<enum 'DatePicker.Range'>",
                                                                            "'date_range'",
@@ -715,7 +715,7 @@ class DatePicker(urwid.WidgetWrap):
         
         # The default style of a list entry. Since only one list entry will be visible at a time, it defines the appearance of the
         # widget's display part.
-        self._item_attr = (entry_not_focus, highlight[0])
+        self._item_attr = (None, highlight[0])
         
         # A full list of months. (From 'January' to 'December'.)
         self._month_list = self._generate_months()
@@ -1079,8 +1079,7 @@ if __name__ == "__main__":
                                            top_exposed=("─x─", "dp_barInactive_focus", "dp_barInactive_off_focus"),
                                            bottom_covered=("ᐁ",  "dp_barActive_focus", "dp_barActive_off_focus"), 
                                            bottom_exposed=("─x─", "dp_barInactive_focus", "dp_barInactive_off_focus"), 
-                                           highlight=("dp_highlight_focus", "dp_highlight_off_focus"), 
-                                           entry_not_focus="default_entry"))
+                                           highlight=("dp_highlight_focus", "dp_highlight_off_focus")))
             
             self.pickers.append(DatePicker(year, month, day,
                                            date_range=DatePicker.Range.ONLY_PAST,
@@ -1091,8 +1090,7 @@ if __name__ == "__main__":
                                            top_exposed=("─x─", "dp_barInactive_focus", "dp_barInactive_off_focus"),
                                            bottom_covered=("ᐁ",  "dp_barActive_focus", "dp_barActive_off_focus"), 
                                            bottom_exposed=("─x─", "dp_barInactive_focus", "dp_barInactive_off_focus"), 
-                                           highlight=("dp_highlight_focus", "dp_highlight_off_focus"), 
-                                           entry_not_focus="default_entry"))
+                                           highlight=("dp_highlight_focus", "dp_highlight_off_focus")))
             
             self.pickers.append(DatePicker(year, month, day,
                                            date_range=DatePicker.Range.ONLY_FUTURE,
@@ -1109,8 +1107,7 @@ if __name__ == "__main__":
                                            top_exposed=("─x─", "dp_barInactive_focus", "dp_barInactive_off_focus"),
                                            bottom_covered=("ᐁ",  "dp_barActive_focus", "dp_barActive_off_focus"), 
                                            bottom_exposed=("─x─", "dp_barInactive_focus", "dp_barInactive_off_focus"), 
-                                           highlight=("dp_highlight_focus", "dp_highlight_off_focus"), 
-                                           entry_not_focus="default_entry"))
+                                           highlight=("dp_highlight_focus", "dp_highlight_off_focus")))
             
             right_column = urwid.Pile([urwid.AttrMap(urwid.Text(right_heading, align="center"),
                                                      "text_bold"),
