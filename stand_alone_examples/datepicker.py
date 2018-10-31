@@ -428,7 +428,7 @@ class IntegerPicker(urwid.WidgetWrap):
                  display=(None, None), top_align="center", top_covered=("▲", None, None), top_exposed=("───", None, None),
                  bottom_align="center", bottom_covered=("▼", None, None), bottom_exposed=("───", None, None)):
         
-        assert (minimum < maximum), "'minimum' must be less than 'maximum'."
+        assert (minimum <= maximum), "'minimum' must be less than or equal to 'maximum'."
         
         assert (minimum <= value <= maximum), "'minimum <= value <= maximum' must be True."
         
