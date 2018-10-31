@@ -165,7 +165,10 @@ class IndicativeListBox(urwid.WidgetWrap):
                 # Resets the appearance of the selected item to its original value.
                 self._w.focus.set_attr_map(self._original_item_attr_map)
                 
-            elif not focus and (self._last_focus_state or (self._last_focus_state is None)) and not self.body_is_empty():
+            elif (self._highlight_off_focus is not None) \
+                        and not focus \
+                        and (self._last_focus_state or (self._last_focus_state is None)) \
+                        and not self.body_is_empty():
                 # Store the 'attr_map' of the selected item and then change it to achieve off focus highlighting.
                 self._original_item_attr_map = self._w.focus.get_attr_map()
                 self._w.focus.set_attr_map(self._highlight_off_focus)
