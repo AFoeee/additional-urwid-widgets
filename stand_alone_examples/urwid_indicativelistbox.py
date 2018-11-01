@@ -404,7 +404,7 @@ if __name__ == "__main__":
                ("text_esc",                  "light red,bold",   "")]
     
     
-    class TestApp(object):
+    class TestApp():
         def __init__(self):
             # Navigation instructions
             text_arrow_keys = urwid.Text([("text_highlight", "↑"),
