@@ -759,6 +759,7 @@ class DatePicker(urwid.WidgetWrap):
                                           on_selection_change=self._year_has_changed,
                                           key_modifier=key_modifier,
                                           return_unused_navigation_keystroke=return_unused_navigation_keystroke,
+                                          display_syntax="{:04}",
                                           display_align=year_align,
                                           display=highlight,
                                           top_align=top_align,
