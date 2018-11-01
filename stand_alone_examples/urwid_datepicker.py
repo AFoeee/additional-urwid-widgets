@@ -992,8 +992,7 @@ class DatePicker(urwid.WidgetWrap):
 # Demonstration
 if __name__ == "__main__":
     
-    PALETTE = [("default_entry",            "",                 "black"),
-               ("reveal_focus",             "black",            "white"),
+    PALETTE = [("reveal_focus",             "black",            "white"),
                ("dp_barActive_focus",       "light gray",       ""),
                ("dp_barActive_off_focus",   "black",            ""),
                ("dp_barInactive_focus",     "dark gray",        ""),
