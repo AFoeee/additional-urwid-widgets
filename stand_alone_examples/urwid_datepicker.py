@@ -705,7 +705,7 @@ class DatePicker(urwid.WidgetWrap):
         self._month_names = month_names
         self._day_names = day_names
         
-        # Since there are different needs regarding the appearance of the date picker, an iterable can be passed, which allows a
+        # Since there are different needs regarding the appearance of the day picker, an iterable can be passed, which allows a
         # customization of the presentation.
         self._day_format = day_format
         
