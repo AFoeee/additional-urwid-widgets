@@ -713,8 +713,8 @@ class DatePicker(urwid.WidgetWrap):
         self._month_align = month_align
         self._day_align = day_align
         
-        # The default style of a list entry. Since only one list entry will be visible at a time, it defines the appearance of the
-        # widget's display part.
+        # The default style of a list entry. Since only one list entry will be visible at a time and there is also off focus
+        # highlighting, the normal value can be 'None' (it is never shown).
         self._item_attr = (None, highlight[0])
         
         # A full list of months. (From 'January' to 'December'.)
