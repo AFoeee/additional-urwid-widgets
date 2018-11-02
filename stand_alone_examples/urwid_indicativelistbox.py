@@ -33,6 +33,12 @@ class KeyModifier(enum.Enum):
 
 
 class IndicativeListBox(urwid.WidgetWrap):
+    # These values are translated by '_get_nearest_valid_position()' into the corresponding int values.
+    class Position(enum.Enum):
+        LAST = 1
+        MIDDLE = 2
+        RANDOM = 3
+    
     def __init__(self, body, *, selected_position=0, on_selection_change=None, initialization_is_selection_change=False,
                  key_modifier=KeyModifier.NONE, return_unused_navigation_keystroke=True, top_align="center",
                  top_covered=("▲", None, None), top_exposed=("───", None, None), bottom_align="center",
@@ -284,14 +290,14 @@ class IndicativeListBox(urwid.WidgetWrap):
             else:
                 return self.rearmost_position()
             
-        elif pos_type == str:
-            if position == "last":
+        elif pos_type == IndicativeListBox.Position:
+            if position == IndicativeListBox.Position.LAST:
                 return self.rearmost_position()
             
-            elif position == "middle":
+            elif position == IndicativeListBox.Position.MIDDLE:
                 return self.body_length() // 2
             
-            elif position == "random":
+            elif position == IndicativeListBox.Position.RANDOM:
                 return random.randint(0,
                                       self.rearmost_position())
                 
@@ -299,7 +305,7 @@ class IndicativeListBox(urwid.WidgetWrap):
                 raise ValueError(VALUE_ERR_MSG.format(position))
             
         else:
-            raise TypeError(TYPE_ERR_MSG.format("<class 'int'> or <class 'str'>",
+            raise TypeError(TYPE_ERR_MSG.format("<class 'int'> or <enum 'IndicativeListBox.Position'>",
                                                 "'position'",
                                                 pos_type))
     
