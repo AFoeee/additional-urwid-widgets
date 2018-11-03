@@ -676,8 +676,8 @@ class DatePicker(urwid.WidgetWrap):
     
     def __init__(self, year, month, day, *, date_range=Range.ALL, month_names=calendar.month_name, day_names=calendar.day_abbr,
                  day_format=(DayFormat.WEEKDAY, DayFormat.DAY_OF_MONTH), arrangement=Arrangement.DAY_MONTH_YEAR, key_modifier=KeyModifier.CTRL,
-                 return_unused_navigation_keystroke=False, year_jump_length=50, min_width_each_picker=9, width_day_picker=("weight", 1),
-                 width_month_picker=("weight", 1), width_year_picker=("weight", 1), space_between=2, year_align="center", month_align="center",
+                 return_unused_navigation_keystroke=False, year_jump_length=50, min_width_each_picker=9, width_year_picker=("weight", 1), 
+                 width_month_picker=("weight", 1), width_day_picker=("weight", 1), space_between=2, year_align="center", month_align="center",
                  day_align="center", top_align="center", top_covered=("▲", None, None), top_exposed=("───", None, None), bottom_align="center",
                  bottom_covered=("▼", None, None), bottom_exposed=("───", None, None), highlight=(None, None)):
         
