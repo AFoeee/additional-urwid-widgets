@@ -26,7 +26,7 @@ class KeyModifier(enum.Enum):
     def __repr__(self):
         return self.value
     
-    # Not every combination of key modifier and key is useful.
+    # Not every combination of modifier and key is useful.
     def prepend_to(self, key, *, separator=" "):
         if self == KeyModifier.NONE:
             return key
