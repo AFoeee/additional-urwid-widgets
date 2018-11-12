@@ -23,11 +23,11 @@ class MODIFIER_KEY(enum.Enum):
     ALT_CTRL = "meta ctrl"
     SHIFT_ALT_CTRL = "shift meta ctrl"
     
-    def prepend_to(self, text, separator=" "):
-        return (self.value + separator + text) if (self != MODIFIER_KEY.NONE) else text
-    
     def append_to(self, text, separator=" "):
         return (text + separator + self.value) if (self != MODIFIER_KEY.NONE) else text
+    
+    def prepend_to(self, text, separator=" "):
+        return (self.value + separator + text) if (self != MODIFIER_KEY.NONE) else text
 
 
 # This class has been slightly modified, but essentially corresponds to this class posted on stackoverflow.com:
