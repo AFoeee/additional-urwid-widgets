@@ -40,7 +40,7 @@ class SelectableRow(urwid.WidgetWrap):
         # Wrap 'urwid.Columns'.
         super().__init__(self._columns)
         
-        # A hook which defines the behavior that is executed when triggered.
+        # A hook which defines the behavior that is executed when a specified key is pressed.
         self.on_select = on_select
     
     def __repr__(self):
