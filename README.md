@@ -3,6 +3,9 @@ Some (in my opinion useful) widgets that extend the python library [urwid](http:
 
 See the corresponding wiki entries of the widgets for more information.
 
+## Installation
+Execute `pip install additional-urwid-widgets` in the terminal.
+
 ## Widgets
 * [DatePicker](https://github.com/AFoeee/additional_urwid_widgets/wiki/DatePicker)
 * [IndicativeListBox](https://github.com/AFoeee/additional_urwid_widgets/wiki/IndicativeListBox)
