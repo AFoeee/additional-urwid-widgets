@@ -102,7 +102,7 @@ class IndicativeListBox(urwid.WidgetWrap):
         modified_size = (size[0],                                                                           # cols
                          size[1] - self._top_bar.rows(just_maxcol) - self._bottom_bar.rows(just_maxcol))    # rows
         
-        if modified_size[1] < 1:
+        if (modified_size[0] < 1) or (modified_size[1] < 1):
             # If there is not enough space left to show the list box, return the placeholder.
             return self._placeholder.render(size, focus=focus)
         
