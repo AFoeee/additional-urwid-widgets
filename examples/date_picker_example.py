@@ -9,7 +9,7 @@ import datetime
 import urwid
 
 
-# Color schemes that specifies the appearance off focus and on focus.
+# Color schemes that specify the appearance off focus and on focus.
 PALETTE = [("reveal_focus",             "black",            "white"),
            ("dp_barActive_focus",       "light gray",       ""),
            ("dp_barActive_offFocus",    "black",            ""),
