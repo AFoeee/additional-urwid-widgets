@@ -442,7 +442,7 @@ if __name__ == "__main__":
     # Iterable which holds the labels for the individual list entries.
     ENTRIES = [str(i) for i in range(33)]
     
-    # Color schemes that specifies the appearance off focus and on focus.
+    # Color schemes that specify the appearance off focus and on focus.
     PALETTE = [("default",                   "",                 "black"),
                ("reveal_focus",              "black",            "light cyan",   "standout"),
                ("ilb_barActive_focus",       "dark cyan",        "light gray"),
