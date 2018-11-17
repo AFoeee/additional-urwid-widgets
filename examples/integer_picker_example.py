@@ -8,7 +8,7 @@ from additional_urwid_widgets.widgets.integer_picker import IntegerPicker
 import urwid 
 
 
-# Color schemes that specifies the appearance off focus and on focus.
+# Color schemes that specify the appearance off focus and on focus.
 PALETTE = [("reveal_focus",              "black",             "white"),
            ("ip_display_focus",          "black",             "brown",   "standout"),
            ("ip_display_offFocus",       "white",             "black"),
