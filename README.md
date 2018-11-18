@@ -1,6 +1,6 @@
 # additional_urwid_widgets
 
-The python library [`urwid`](http://urwid.org/index.html) contains many basic widgets, but lacks (in my opinion) "more specialized" widgets, such as a date picker or similar.
+The python library [`urwid`](http://urwid.org/index.html) contains many basic widgets, but lacks (in my opinion) "more specialized" widgets, such as a date picker.
 
 This project contains such "more specialized" widgets.  
 
