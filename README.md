@@ -2,7 +2,7 @@
 
 The python library [`urwid`](http://urwid.org/index.html) contains many basic widgets, but lacks (in my opinion) "more specialized" widgets, such as a date picker.
 
-This project contains such "more specialized" widgets.  
+This project provides such "more specialized" widgets.  
 
 See the corresponding wiki entries of the widgets for more information.
 
