@@ -4,6 +4,8 @@ The python library [`urwid`](http://urwid.org/index.html) contains many basic wi
 
 This project provides such "more specialized" widgets.  
 
+***
+
 ## Installation
 The project can be installed via [pip](https://pypi.org/project/additional-urwid-widgets/).
 
@@ -22,6 +24,8 @@ There are several approaches to install a package via the terminal (as discribed
 * Install to the system folder (**not recommended**):  
 
         python3 -m pip install additional-urwid-widgets
+
+***
 
 ## Widgets
 
