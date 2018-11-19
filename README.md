@@ -9,7 +9,21 @@ See the corresponding wiki entries of the widgets for more information.
 ## Installation
 The project can be installed via [pip](https://pypi.org/project/additional-urwid-widgets/).
 
-To do so, execute `pip install additional-urwid-widgets` in the terminal.
+#### Options
+There are several ways to install a package (as discribed [here](https://github.com/googlesamples/assistant-sdk-python/issues/236#issuecomment-383039470)):
+*  setup a virtual env to install the package (**recommended**):
+
+    python3 venv env
+    source ./env/bin/activate 
+    python3 pip install additional-urwid-widgets
+    
+* Install the package to the user folder:
+
+    python3 pip install --user additional-urwid-widgets
+    
+* Install to the system folder (**not recommended**):
+
+    python3 pip install --user additional-urwid-widgets
 
 ## Widgets
 * [**DatePicker**](https://github.com/AFoeee/additional_urwid_widgets/wiki/DatePicker)  
