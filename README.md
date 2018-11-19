@@ -4,8 +4,6 @@ The python library [`urwid`](http://urwid.org/index.html) contains many basic wi
 
 This project provides such "more specialized" widgets.  
 
-See the corresponding wiki entries of the widgets for more information.
-
 ## Installation
 The project can be installed via [pip](https://pypi.org/project/additional-urwid-widgets/).
 
@@ -26,6 +24,9 @@ There are several approaches to install a package via the terminal (as discribed
         python3 pip install additional-urwid-widgets
 
 ## Widgets
+
+See the corresponding wiki entries of the widgets for more information.
+
 * [**DatePicker**](https://github.com/AFoeee/additional_urwid_widgets/wiki/DatePicker)  
 A (rudimentary) date picker.
 
