@@ -9,7 +9,7 @@ The project can be installed via [pip](https://pypi.org/project/additional-urwid
 
 ### Options
 There are several approaches to install a package via the terminal (as discribed [here](https://github.com/googlesamples/assistant-sdk-python/issues/236#issuecomment-383039470)):
-*  setup a virtual env to install the package (**recommended**):  
+*  Setup a virtual env to install the package (**recommended**):  
 
         python3 venv env
         source ./env/bin/activate 
