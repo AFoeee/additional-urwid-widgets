@@ -13,15 +13,15 @@ There are several approaches to install a package via the terminal (as discribed
 
         python3 venv env
         source ./env/bin/activate 
-        python3 pip install additional-urwid-widgets
+        python3 -m pip install additional-urwid-widgets
     
 * Install the package to the user folder:  
 
-        python3 pip install --user additional-urwid-widgets
+        python3 -m pip install --user additional-urwid-widgets
     
 * Install to the system folder (**not recommended**):  
 
-        python3 pip install additional-urwid-widgets
+        python3 -m pip install additional-urwid-widgets
 
 ## Widgets
 
