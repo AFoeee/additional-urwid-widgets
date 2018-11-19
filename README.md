@@ -10,7 +10,7 @@ See the corresponding wiki entries of the widgets for more information.
 The project can be installed via [pip](https://pypi.org/project/additional-urwid-widgets/).
 
 ### Options
-There are several ways to install a package (as discribed [here](https://github.com/googlesamples/assistant-sdk-python/issues/236#issuecomment-383039470)):
+There are several ways to install a package via the terminal (as discribed [here](https://github.com/googlesamples/assistant-sdk-python/issues/236#issuecomment-383039470)):
 *  setup a virtual env to install the package (**recommended**):  
 
         python3 venv env
