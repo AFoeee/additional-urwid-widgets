@@ -28,6 +28,8 @@ class MODIFIER_KEY(enum.Enum):
 
 
 class IndicativeListBox(urwid.WidgetWrap):
+     """Wraps 'urwid.ListBox' to add bars that indicate that only a part of the list is visible."""
+     
     _TYPE_ERR_MSG = "type {} was expected for {}, but found: {}."
     _VALUE_ERR_MSG = "unrecognized value: {}."
 
