@@ -1,8 +1,6 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Serves as a selector for integer numbers."""
-
 
 from ..assisting_modules.modifier_key import MODIFIER_KEY        # pylint: disable=unused-import
 from .selectable_row import SelectableRow
@@ -12,6 +10,8 @@ import urwid
 
 
 class IntegerPicker(urwid.WidgetWrap):
+    """Serves as a selector for integer numbers."""
+
     def __init__(self, value, *, min_v=(-sys.maxsize - 1), max_v=sys.maxsize, step_len=1, jump_len=100, on_selection_change=None,
                  initialization_is_selection_change=False, modifier_key=MODIFIER_KEY.NONE, ascending=True,
                  return_unused_navigation_input=True, topBar_align="center", topBar_endCovered_prop=("▲", None, None),
