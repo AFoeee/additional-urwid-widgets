@@ -1,8 +1,6 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Wraps 'urwid.ListBox' to add bars that indicate that only a part of the list is visible."""
-
 
 from ..assisting_modules.modifier_key import MODIFIER_KEY        # pylint: disable=unused-import
 
@@ -12,6 +10,8 @@ import urwid
 
 
 class IndicativeListBox(urwid.WidgetWrap):
+    """Wraps 'urwid.ListBox' to add bars that indicate that only a part of the list is visible."""
+
     _TYPE_ERR_MSG = "type {} was expected for {}, but found: {}."
     _VALUE_ERR_MSG = "unrecognized value: {}."
 
