@@ -1,15 +1,15 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Wraps 'urwid.Columns' to make it selectable.
-This class has been slightly modified, but essentially corresponds to this class posted on stackoverflow.com:
-https://stackoverflow.com/questions/52106244/how-do-you-combine-multiple-tui-forms-to-write-more-complex-applications#answer-52174629"""
-
 
 import urwid
 
 
 class SelectableRow(urwid.WidgetWrap):
+    """Wraps 'urwid.Columns' to make it selectable.
+    This class has been slightly modified, but essentially corresponds to this class posted on stackoverflow.com:
+    https://stackoverflow.com/questions/52106244/how-do-you-combine-multiple-tui-forms-to-write-more-complex-applications#answer-52174629"""
+
     def __init__(self, contents, *, align="left", on_select=None):
         # A list-like object, where each element represents the value of a column.
         self.contents = contents
