@@ -11,6 +11,9 @@ import urwid
 
 
 class MODIFIER_KEY(enum.Enum):
+    """Represents modifier keys such as 'ctrl', 'shift' and so on.
+    Not every combination of modifier and input is useful."""
+    
     NONE = ""
     SHIFT = "shift"
     ALT = "meta"
