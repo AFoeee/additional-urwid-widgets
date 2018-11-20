@@ -792,6 +792,8 @@ def recursively_replace(original, replacements, include_original_keys=False):
 
 
 class DatePicker(urwid.WidgetWrap):
+     """Serves as a selector for dates."""
+     
     _TYPE_ERR_MSG = "type {} was expected for {}, but found: {}."
     _VALUE_ERR_MSG = "unrecognized value: {}."
 
