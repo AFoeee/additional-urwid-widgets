@@ -1,8 +1,6 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Serves as a selector for dates."""
-
 
 from ..assisting_modules.modifier_key import MODIFIER_KEY        # pylint: disable=unused-import
 from ..assisting_modules.useful_functions import recursively_replace
@@ -17,6 +15,8 @@ import urwid
 
 
 class DatePicker(urwid.WidgetWrap):
+    """Serves as a selector for dates."""
+    
     _TYPE_ERR_MSG = "type {} was expected for {}, but found: {}."
     _VALUE_ERR_MSG = "unrecognized value: {}."
 
