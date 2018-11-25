@@ -422,14 +422,10 @@ class IndicativeListBox(urwid.WidgetWrap):
         body = self.get_body()
         del body[position]
         
-    def delete_item(self, item):
-        pos = self.get_body().index(item)
-        self.delete_position(pos)
-        
     def delete_selected_item(self):
         pos = self.get_selected_position()
         
-        # If the list body is not empyt, delete the selected item.
+        # If the list body is not empty, delete the selected item.
         if pos is not None:
             self.delete_position(pos)
         
