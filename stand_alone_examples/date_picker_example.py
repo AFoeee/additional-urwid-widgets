@@ -488,6 +488,13 @@ class IndicativeListBox(urwid.WidgetWrap):
         pos = self.get_body().index(item)
         self.delete_position(pos)
         
+    def delete_selected_item(self):
+        pos = self.get_selected_position()
+        
+        # If the list body is not empty, delete the selected item.
+        if pos is not None:
+            self.delete_position(pos)
+        
 
 class IntegerPicker(urwid.WidgetWrap):
     """Serves as a selector for integer numbers."""
