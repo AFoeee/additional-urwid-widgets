@@ -440,10 +440,6 @@ class IndicativeListBox(urwid.WidgetWrap):
         body = self.get_body()
         del body[position]
         
-    def delete_item(self, item):
-        pos = self.get_body().index(item)
-        self.delete_position(pos)
-        
     def delete_selected_item(self):
         pos = self.get_selected_position()
         
