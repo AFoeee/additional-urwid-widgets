@@ -9,7 +9,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(name="additional_urwid_widgets",
-      version="0.3.4",
+      version="0.3.5",
       description="Some (in my opinion) useful widgets that extend the python library 'urwid'.",
       long_description=long_description,
       long_description_content_type="text/markdown",
