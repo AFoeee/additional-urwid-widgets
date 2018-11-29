@@ -41,7 +41,7 @@ A [`urwid.ListBox`](http://urwid.org/reference/widget.html#listbox) with additio
 A selector for integer numbers.
 
 * [**MessageDialog**](https://github.com/AFoeee/additional_urwid_widgets/wiki/MessageDialog)  
-Wraps [`urwid.Overlay`](http://urwid.org/reference/widget.html#overlay) to show an message and expects a reaction from the user.
+Wraps [`urwid.Overlay`](http://urwid.org/reference/widget.html#overlay) to show a message and expects a reaction from the user.
 
 * [**SelectableRow**](https://github.com/AFoeee/additional_urwid_widgets/wiki/SelectableRow)  
 Wraps [`urwid.Columns`](http://urwid.org/reference/widget.html#columns) to make it selectable and adds behavior.
