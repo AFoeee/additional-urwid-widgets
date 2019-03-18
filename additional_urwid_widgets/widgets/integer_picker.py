@@ -39,6 +39,15 @@ class IntegerPicker(urwid.WidgetWrap):
         # 'MODIFIER_KEY' changes the behavior, so that the widget responds only to modified input. ('up' => 'ctrl up')
         self._modifier_key = modifier_key
         
+        # User defined keybindings
+        # m/p stands for minus/plus
+        self._key_step_m = 'up'
+        self._key_step_p = 'down'
+        self._key_jump_m = 'page up'
+        self._key_jump_p = 'page down'
+        self._key_end = 'end'
+        self._key_home = 'home'
+
         # Specifies whether moving upwards represents a decrease or an increase of the value.
         self._ascending = ascending
         
@@ -124,22 +133,22 @@ class IntegerPicker(urwid.WidgetWrap):
     def keypress(self, size, key):
         # A keystroke is changed to a modified one ('up' => 'ctrl up'). This prevents the widget from responding when the arrows 
         # keys are used to navigate between widgets. That way it can be used in a 'urwid.Pile' or similar.
-        if key == self._modifier_key.prepend_to("up"):
+        if key == self._modifier_key.prepend_to(self._key_step_m):
             successful = self._change_value(-self._step_len)
         
-        elif key == self._modifier_key.prepend_to("down"):
+        elif key == self._modifier_key.prepend_to(self._key_step_p):
             successful = self._change_value(self._step_len)
         
-        elif key == self._modifier_key.prepend_to("page up"):
+        elif key == self._modifier_key.prepend_to(self._key_jump_m):
             successful = self._change_value(-self._jump_len)
         
-        elif key == self._modifier_key.prepend_to("page down"):
+        elif key == self._modifier_key.prepend_to(self._key_jump_p):
             successful = self._change_value(self._jump_len)
         
-        elif key == self._modifier_key.prepend_to("home"):
+        elif key == self._modifier_key.prepend_to(self._key_home):
             successful = self._change_value(float("-inf"))
         
-        elif key == self._modifier_key.prepend_to("end"):
+        elif key == self._modifier_key.prepend_to(self._key_end):
             successful = self._change_value(float("inf"))
         
         else:
