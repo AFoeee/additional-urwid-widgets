@@ -34,6 +34,9 @@ See the corresponding wiki entries of the widgets for more information.
 * [**DatePicker**](https://github.com/AFoeee/additional_urwid_widgets/wiki/DatePicker)  
 A (rudimentary) date picker.
 
+* [**TimePicker**](https://github.com/AFoeee/additional_urwid_widgets/wiki/TimePicker) 
+A (rudimentary) time picker.
+
 * [**IndicativeListBox**](https://github.com/AFoeee/additional_urwid_widgets/wiki/IndicativeListBox)  
 A [`urwid.ListBox`](http://urwid.org/reference/widget.html#listbox) with additional bars to indicate hidden list items.
 
